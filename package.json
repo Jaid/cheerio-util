@@ -1,6 +1,6 @@
 {
   "private": true,
-  "webpackConfigJaid": "universalLib",
+  "webpackConfigJaid": "nodeLib",
   "version": "1.0.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
@@ -14,6 +14,7 @@
     "acorn": "^6.2.0",
     "babel-jest": "^24.8.0",
     "babel-preset-jaid": "^6.8.2",
+    "browserslist-config-jaid-node": "^2.2.1",
     "browserslist-config-jaid-universal": "^2.0.0",
     "eslint": "^6.0.1",
     "eslint-config-jaid": "^1.24.0",

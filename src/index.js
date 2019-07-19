@@ -5,8 +5,6 @@ import cheerio from "cheerio"
 import testString from "test-string"
 import normalizeHtmlWhitespace from "normalize-html-whitespace"
 
-const tdSelector = "th, td"
-
 /**
  * @function
  * @param {import("cheerio")} cheerioRoot
@@ -37,25 +35,25 @@ function findByText(needle) {
 }
 
 function findTrByFirstTd(needle) {
-  const trNodes = this.find("tr")
-  const matchedTrNodes = trNodes.filter((index, node) => {
-    const trNodeApi = cheerioEnhanced(node)
-    const tdNodes = trNodeApi.children(tdSelector)
-    if (tdNodes.length === 0) {
-      return false
+  const trNodes = cheerioEnhanced(this).find("tr")
+  const getFirstMatchedTr = () => {
+    for (const tr of trNodes.toArray()) {
+      const tdNodes = cheerioEnhanced(tr).find("td")
+      if (tdNodes.length === 0) {
+        continue
+      }
+      const firstTd = cheerioEnhanced(tdNodes |> first)
+      const tdText = firstTd.textNormalized()
+      if (testString(tdText, needle)) {
+        return cheerioEnhanced(tr)
+      }
     }
-    const firstTd = tdNodes.first()
-    const nodeText = firstTd.textNormalized()
-    if (nodeText.length === 0) {
-      return false
-    }
-    return testString(nodeText, needle)
-  })
-  if (matchedTrNodes.length === 0) {
+  }
+  const trNode = getFirstMatchedTr()
+  if (trNode === undefined) {
     return null
   }
-  const trNode = matchedTrNodes.first()
-  const tdsWithoutFirst = trNode.children(tdSelector) |> drop
+  const tdsWithoutFirst = trNode.children("td") |> drop
   const tdValues = tdsWithoutFirst.map(node => {
     const nodeText = cheerioEnhanced(node).textNormalized()
     return nodeText
