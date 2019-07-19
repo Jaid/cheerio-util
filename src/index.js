@@ -22,4 +22,9 @@ const wrap = cheerioRoot => {
   cheerioRoot.prototype.findByText = findByText
 }
 
-export default wrap
+export {wrap}
+
+/**
+ * @type {import {CheerioAPI} from "cheerio"}
+ */
+export default cheerioEnhanced
