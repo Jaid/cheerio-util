@@ -1,12 +1,25 @@
 /** @module cheerio-util */
 
-/**
- * Returns the number of seconds passed since Unix epoch (01 January 1970)
- * @function
- * @returns {number} Seconds since epoch
- * @example
- * import cheerioUtil from "cheerio-util"
- * const result = cheerioUtil()
- * result === 1549410770
- */
-export default () => Math.floor(Date.now() / 1000)
+import {first} from "lodash"
+import cheerio from "cheerio"
+
+function filterByText(needle) {
+  return this.filter(function () {
+    const nodeText = cheerio.text(this.children).trim()
+    return nodeText.includes(needle)
+  })
+}
+
+function findByText(needle) {
+  return this.filter(function () {
+    const nodeText = cheerio.text(this.children).trim()
+    return nodeText.includes(needle)
+  }) |> first
+}
+
+const wrap = cheerioRoot => {
+  cheerioRoot.prototype.filterByText = filterByText
+  cheerioRoot.prototype.findByText = findByText
+}
+
+export default wrap

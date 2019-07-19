@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "^7.5.5",
+    "cheerio": "^1.0.0-rc.3",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "acorn": "^6.2.0",
@@ -12,7 +14,7 @@
     "babel-preset-jaid": "^6.8.2",
     "browserslist-config-jaid-universal": "^2.0.0",
     "eslint": "^6.0.1",
-    "eslint-config-jaid": "^1.23.0",
+    "eslint-config-jaid": "^1.24.0",
     "jest": "^24.8.0",
     "rimraf": "^2.6.3",
     "webpack": "^4.36.1",
