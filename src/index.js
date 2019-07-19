@@ -38,14 +38,14 @@ function findByText(needle) {
 
 function findTrByFirstTd(needle) {
   const trNodes = this.find("tr")
-  const matchedTrNodes = trNodes.filter(function () {
-    const trNodeApi = cheerioEnhanced(this)
+  const matchedTrNodes = trNodes.filter((index, node) => {
+    const trNodeApi = cheerioEnhanced(node)
     const tdNodes = trNodeApi.children(tdSelector)
     if (tdNodes.length === 0) {
       return false
     }
     const firstTd = tdNodes.first()
-    const nodeText = firstTd.text().trim()
+    const nodeText = firstTd.textNormalized()
     if (nodeText.length === 0) {
       return false
     }
