@@ -52,6 +52,11 @@ it("findByText", () => {
   expect(color).toBe("red")
 })
 
+it("textNormalized", () => {
+  const allText = dom.root().textNormalized()
+  expect(allText.startsWith("Attribute")).toBeTruthy()
+})
+
 it("findtrByFirstTd", () => {
   const price = dom.root().findTrByFirstTd("Price")
   expect(price).toStrictEqual(["344,99 €"])
