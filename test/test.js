@@ -26,6 +26,20 @@ const html = `
 
 const dom = cheerioEnhanced.load(html)
 
+it("should be the enhanced version of cheerio", () => {
+  const utilFunctions = [
+    "findByText",
+    "filterByText",
+    "findTrByFirstTd",
+    "textNormalized",
+  ]
+  for (const utilFunction of utilFunctions) {
+    expect(typeof dom.prototype[utilFunction]).toBe("function")
+    expect(typeof dom.fn[utilFunction]).toBe("function")
+    expect(typeof dom("tr").first()[utilFunction]).toBe("function")
+  }
+})
+
 it("findByText", () => {
   const getAttributeValue = key => {
     const trNodes = dom("tr")
@@ -40,5 +54,5 @@ it("findByText", () => {
 
 it("findtrByFirstTd", () => {
   const price = dom.root().findTrByFirstTd("Price")
-  expect(price[0]).toBe("344,99 €")
+  expect(price).toStrictEqual(["344,99 €"])
 })
