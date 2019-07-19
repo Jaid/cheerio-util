@@ -8,10 +8,6 @@ import normalizeHtmlWhitespace from "normalize-html-whitespace"
 const tdSelector = "th, td"
 
 /**
- * @typedef {import {CheerioAPI} from "cheerio"} CheerioEnhanced
- */
-
-/**
  * @function
  * @param {import("cheerio")} cheerioRoot
  * @returns {import("cheerio")}
