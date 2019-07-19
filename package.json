@@ -6,7 +6,9 @@
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "cheerio": "^1.0.0-rc.3",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "normalize-html-whitespace": "^1.0.0",
+    "test-string": "^1.0.0"
   },
   "devDependencies": {
     "acorn": "^6.2.0",
