@@ -15,11 +15,11 @@
     "babel-jest": "^24.8.0",
     "babel-preset-jaid": "^6.8.2",
     "browserslist-config-jaid-universal": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-jaid": "^1.24.0",
+    "eslint": "^6.1.0",
+    "eslint-config-jaid": "^1.26.0",
     "jest": "^24.8.0",
     "rimraf": "^2.6.3",
-    "webpack": "^4.36.1",
+    "webpack": "^4.38.0",
     "webpack-config-jaid": "^5.23.0"
   },
   "scripts": {
