@@ -1,9 +1,9 @@
 # cheerio-util
 
 
-<a href="https://raw.githubusercontent.com/Jaid/cheerio-util/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/cheerio-util?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/cheerio-util/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fcheerio-util%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/cheerio-util/commits"><img src="https://img.shields.io/github/commits-since/Jaid/cheerio-util/v2.1.0?style=flat-square&logo=github" alt="Commits since v2.1.0"/></a> <a href="https://github.com/Jaid/cheerio-util/commits"><img src="https://img.shields.io/github/last-commit/Jaid/cheerio-util?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/cheerio-util/issues"><img src="https://img.shields.io/github/issues/Jaid/cheerio-util?style=flat-square&logo=github" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/cheerio-util"><img src="https://img.shields.io/npm/v/cheerio-util?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/cheerio-util/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/cheerio-util?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/cheerio-util"><img src="https://img.shields.io/npm/dm/cheerio-util?style=flat-square&logo=npm" alt="Downloads"/></a>
+<a href="https://raw.githubusercontent.com/jaid/cheerio-util/master/license.txt"><img src="https://img.shields.io/github/license/jaid/cheerio-util?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor cheerio-util"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/cheerio-util/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fcheerio-util%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/cheerio-util/commits"><img src="https://img.shields.io/github/commits-since/jaid/cheerio-util/v2.1.0?style=flat-square&logo=github" alt="Commits since v2.1.0"/></a> <a href="https://github.com/jaid/cheerio-util/commits"><img src="https://img.shields.io/github/last-commit/jaid/cheerio-util?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/cheerio-util/issues"><img src="https://img.shields.io/github/issues/jaid/cheerio-util?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/cheerio-util"><img src="https://img.shields.io/npm/v/cheerio-util?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/cheerio-util/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/cheerio-util?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/cheerio-util"><img src="https://img.shields.io/npm/dm/cheerio-util?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **Utility functions for selecting nodes with cheerio.**
 
@@ -37,14 +37,13 @@ yarn add cheerio-util@^2.1.0
 
 
 
-
 ## Development
 
 
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/cheerio-util.git
+git clone git@github.com:jaid/cheerio-util.git
 cd cheerio-util
 npm install
 ```
