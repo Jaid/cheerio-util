@@ -36,5 +36,9 @@
   },
   "name": "cheerio-util",
   "description": "Utility functions for selecting nodes with cheerio.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/cheerio-util"
+  }
 }
