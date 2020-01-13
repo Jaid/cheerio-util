@@ -35,5 +35,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "cheerio-util",
-  "description": "Utility functions for selecting nodes with cheerio."
+  "description": "Utility functions for selecting nodes with cheerio.",
+  "funding": "https://github.com/sponsors/jaid"
 }
