@@ -40,5 +40,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/cheerio-util"
-  }
+  },
+  "homepage": "https://github.com/Jaid/cheerio-util",
+  "keywords": []
 }
