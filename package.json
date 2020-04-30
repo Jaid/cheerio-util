@@ -41,5 +41,18 @@
     "url": "https://github.com/jaid/cheerio-util"
   },
   "homepage": "https://github.com/Jaid/cheerio-util",
-  "keywords": []
+  "keywords": [
+    "cheerio",
+    "cheerio-util",
+    "dom",
+    "javascript",
+    "jquery",
+    "library",
+    "node",
+    "nodejs",
+    "selector",
+    "typescript",
+    "util",
+    "utility"
+  ]
 }
